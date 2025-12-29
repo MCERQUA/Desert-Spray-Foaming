@@ -32,7 +32,6 @@ const steps = [
 export default function Process() {
   const sectionRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
-  const lineRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -66,25 +65,6 @@ export default function Process() {
             scrollTrigger: {
               trigger: titleRef.current,
               start: "top 85%",
-              toggleActions: "play none none none",
-            },
-          }
-        );
-      }
-
-      // Animate the connecting line
-      if (lineRef.current) {
-        gsap.fromTo(
-          lineRef.current,
-          { scaleX: 0, opacity: 0 },
-          {
-            scaleX: 1,
-            opacity: 1,
-            duration: 1.5,
-            ease: "power4.out",
-            scrollTrigger: {
-              trigger: cardsRef.current,
-              start: "top 70%",
               toggleActions: "play none none none",
             },
           }
@@ -223,13 +203,6 @@ export default function Process() {
 
         {/* Process Steps */}
         <div ref={cardsRef} className="relative">
-          {/* Connecting Line (Desktop) */}
-          <div
-            ref={lineRef}
-            className="hidden lg:block absolute top-24 left-[15%] right-[15%] h-1 bg-gradient-to-r from-orange-500/50 via-orange-400 to-orange-500/50 origin-left"
-            style={{ transform: "scaleX(0)" }}
-          />
-
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
             {steps.map((step, idx) => {
               const Icon = step.icon;
