@@ -12,7 +12,7 @@ const inter = Inter({
 const siteUrl = "https://desertsprayfoaming.com";
 
 export const viewport: Viewport = {
-  themeColor: "#f97316",
+  themeColor: "#391F56",
   width: "device-width",
   initialScale: 1,
 };
@@ -244,7 +244,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} font-sans antialiased bg-black text-white`}
+        className={`${inter.variable} font-sans antialiased bg-purple-dark text-white`}
         suppressHydrationWarning
       >
         <Navigation />

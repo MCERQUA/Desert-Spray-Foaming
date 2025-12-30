@@ -52,11 +52,11 @@ export default function ServicesPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-dark via-purple-dark/90 to-purple-dark/70" />
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
             transition={{ duration: 8, repeat: Infinity }}
-            className="absolute top-0 left-0 w-[600px] h-[600px] bg-orange-500/20 rounded-full blur-[150px]"
+            className="absolute top-0 left-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]"
           />
         </div>
 
@@ -68,8 +68,8 @@ export default function ServicesPage() {
             className="max-w-3xl"
           >
             <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-orange mb-8">
-              <Sparkles className="w-4 h-4 text-orange-400" />
-              <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+              <Sparkles className="w-4 h-4 text-primary-light" />
+              <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
                 Our Services
               </span>
             </div>
@@ -88,7 +88,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-32 bg-gradient-to-b from-black to-zinc-950 relative">
+      <section className="py-32 bg-gradient-to-b from-purple-dark to-purple relative">
         <div className="absolute inset-0 grid-overlay opacity-20" />
 
         <div className="container mx-auto px-4 relative z-10">
@@ -112,11 +112,11 @@ export default function ServicesPage() {
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-purple-dark via-purple-dark/60 to-transparent" />
 
                       <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                        <div className="w-14 h-14 rounded-2xl bg-orange-500/20 backdrop-blur-xl border border-orange-500/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                          <Icon className="w-7 h-7 text-orange-400" />
+                        <div className="w-14 h-14 rounded-2xl bg-primary/20 backdrop-blur-xl border border-primary/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                          <Icon className="w-7 h-7 text-primary-light" />
                         </div>
 
                         <h2 className="text-3xl font-black text-white mb-3">
@@ -138,7 +138,7 @@ export default function ServicesPage() {
                           ))}
                         </div>
 
-                        <div className="flex items-center gap-2 text-orange-400 font-bold group-hover:gap-4 transition-all">
+                        <div className="flex items-center gap-2 text-primary-light font-bold group-hover:gap-4 transition-all">
                           Learn More
                           <ArrowRight className="w-5 h-5" />
                         </div>

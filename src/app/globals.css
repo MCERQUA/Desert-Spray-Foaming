@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #fafafa;
-  --primary: #f97316;
-  --primary-dark: #ea580c;
-  --primary-light: #fb923c;
-  --secondary: #0ea5e9;
+  /* Purple/Gold Theme - Matching original website */
+  --background: #391F56;
+  --background-light: #46276A;
+  --foreground: #FAFAFA;
+  --primary: #CAA982;
+  --primary-dark: #B8956E;
+  --primary-light: #D4BB9A;
+  --purple: #46276A;
+  --purple-dark: #391F56;
+  --teal: #7EBEC5;
   --muted: #a1a1aa;
 }
 
@@ -34,7 +38,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #2a1744;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -44,27 +48,35 @@ body {
 
 /* Glassmorphism utilities */
 .glass {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .glass-dark {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(57, 31, 86, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.glass-orange {
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%, rgba(234, 88, 12, 0.1) 100%);
+.glass-gold {
+  background: linear-gradient(135deg, rgba(202, 169, 130, 0.15) 0%, rgba(184, 149, 110, 0.1) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(249, 115, 22, 0.3);
+  border: 1px solid rgba(202, 169, 130, 0.3);
 }
 
-/* Text gradient */
+/* Legacy class name for compatibility */
+.glass-orange {
+  background: linear-gradient(135deg, rgba(202, 169, 130, 0.15) 0%, rgba(184, 149, 110, 0.1) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(202, 169, 130, 0.3);
+}
+
+/* Text gradient - Gold */
 .text-gradient {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, var(--primary) 100%);
   background-size: 200% auto;
@@ -75,7 +87,7 @@ body {
 
 /* Animated gradient text */
 .text-gradient-animated {
-  background: linear-gradient(90deg, var(--primary), var(--primary-light), #fbbf24, var(--primary));
+  background: linear-gradient(90deg, var(--primary), var(--primary-light), #FAFAFA, var(--primary));
   background-size: 300% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -88,13 +100,18 @@ body {
   50% { background-position: 100% 50%; }
 }
 
-/* Glow effects */
+/* Glow effects - Gold */
+.glow-gold {
+  box-shadow: 0 0 40px rgba(202, 169, 130, 0.3), 0 0 80px rgba(202, 169, 130, 0.2);
+}
+
+/* Legacy class name */
 .glow-orange {
-  box-shadow: 0 0 40px rgba(249, 115, 22, 0.3), 0 0 80px rgba(249, 115, 22, 0.2);
+  box-shadow: 0 0 40px rgba(202, 169, 130, 0.3), 0 0 80px rgba(202, 169, 130, 0.2);
 }
 
 .glow-text {
-  text-shadow: 0 0 40px rgba(249, 115, 22, 0.5);
+  text-shadow: 0 0 40px rgba(202, 169, 130, 0.5);
 }
 
 /* Grid pattern overlay */

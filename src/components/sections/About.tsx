@@ -175,11 +175,11 @@ export default function About() {
     <section ref={sectionRef} className="relative py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-950 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-dark via-zinc-950 to-purple-dark" />
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
           transition={{ duration: 12, repeat: Infinity }}
-          className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10 rounded-full blur-[200px]"
+          className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[200px]"
         />
         <div className="absolute inset-0 grid-overlay opacity-20" />
       </div>
@@ -200,7 +200,7 @@ export default function About() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-dark/60 to-transparent" />
               </motion.div>
 
               {/* Secondary Image */}
@@ -214,7 +214,7 @@ export default function About() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-dark/60 to-transparent" />
               </motion.div>
 
               {/* Experience Badge */}
@@ -227,7 +227,7 @@ export default function About() {
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                   className="glass-orange rounded-3xl p-6 text-center"
                 >
-                  <div className="text-5xl font-black text-orange-400 mb-1">6+</div>
+                  <div className="text-5xl font-black text-primary-light mb-1">6+</div>
                   <div className="text-sm font-bold text-white/80">Years of</div>
                   <div className="text-sm font-bold text-white/80">Experience</div>
                 </motion.div>
@@ -244,8 +244,8 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-orange mb-8"
             >
-              <Users className="w-4 h-4 text-orange-400" />
-              <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+              <Users className="w-4 h-4 text-primary-light" />
+              <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
                 About Us
               </span>
             </motion.div>
@@ -268,7 +268,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-lg text-white/70 leading-relaxed mb-6"
             >
-              With over <span className="text-orange-400 font-bold">6 years of experience</span> in the insulation industry and a passion for his work, Klass started Desert Spray Foaming in 2023. Our mission is to provide value, a comfortable indoor environment, customer satisfaction, affordable pricing, and a quality product.
+              With over <span className="text-primary-light font-bold">6 years of experience</span> in the insulation industry and a passion for his work, Klass started Desert Spray Foaming in 2023. Our mission is to provide value, a comfortable indoor environment, customer satisfaction, affordable pricing, and a quality product.
             </motion.p>
 
             <motion.p
@@ -278,7 +278,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg text-white/70 leading-relaxed mb-10"
             >
-              At Desert Spray Foaming, we're not just about insulation — we're about <span className="text-orange-400 font-bold">creating lasting relationships</span> and spaces you'll love.
+              At Desert Spray Foaming, we're not just about insulation — we're about <span className="text-primary-light font-bold">creating lasting relationships</span> and spaces you'll love.
             </motion.p>
 
             {/* Values */}
@@ -292,9 +292,9 @@ export default function About() {
                   >
                     <motion.div
                       whileHover={{ scale: 1.1, rotate: 6 }}
-                      className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/30 flex items-center justify-center transition-transform"
+                      className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary-dark/20 border border-primary/30 flex items-center justify-center transition-transform"
                     >
-                      <Icon className="w-6 h-6 text-orange-400" />
+                      <Icon className="w-6 h-6 text-primary-light" />
                     </motion.div>
                     <div>
                       <h3 className="text-xl font-bold text-white mb-1">{value.title}</h3>

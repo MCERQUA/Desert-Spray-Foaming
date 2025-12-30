@@ -21,11 +21,11 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center overflow-hidden pt-32">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-black via-zinc-950 to-black" />
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-dark via-zinc-950 to-purple-dark" />
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
             transition={{ duration: 8, repeat: Infinity }}
-            className="absolute top-0 right-0 w-[600px] h-[600px] bg-orange-500/20 rounded-full blur-[150px]"
+            className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]"
           />
           <div className="absolute inset-0 grid-overlay opacity-30" />
         </div>
@@ -38,8 +38,8 @@ export default function ContactPage() {
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-orange mb-8"
             >
-              <Mail className="w-4 h-4 text-orange-400" />
-              <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+              <Mail className="w-4 h-4 text-primary-light" />
+              <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
                 Get In Touch
               </span>
             </motion.div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-b from-black to-zinc-950 relative">
+      <section className="py-20 bg-gradient-to-b from-purple-dark to-purple relative">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Info */}
@@ -92,11 +92,11 @@ export default function ContactPage() {
                   whileHover={{ scale: 1.02, x: 10 }}
                   className="flex items-center gap-6 glass-orange rounded-2xl p-6"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/50">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-lg shadow-primary/50">
                     <Phone className="w-8 h-8 text-white" />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-orange-400 uppercase tracking-wider mb-1">
+                    <div className="text-sm font-bold text-primary-light uppercase tracking-wider mb-1">
                       Call Us
                     </div>
                     <div className="text-2xl font-black text-white">432-209-9154</div>
@@ -181,7 +181,7 @@ export default function ContactPage() {
                         <input
                           type="text"
                           required
-                          className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all"
+                          className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                           placeholder="John"
                         />
                       </div>
@@ -190,7 +190,7 @@ export default function ContactPage() {
                         <input
                           type="text"
                           required
-                          className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all"
+                          className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                           placeholder="Doe"
                         />
                       </div>
@@ -201,7 +201,7 @@ export default function ContactPage() {
                       <input
                         type="email"
                         required
-                        className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all"
+                        className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                         placeholder="john@example.com"
                       />
                     </div>
@@ -211,7 +211,7 @@ export default function ContactPage() {
                       <input
                         type="tel"
                         required
-                        className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all"
+                        className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                         placeholder="(432) 555-0123"
                       />
                     </div>
@@ -220,7 +220,7 @@ export default function ContactPage() {
                       <label className="block text-sm font-bold text-white/80 mb-2">Service Needed</label>
                       <select
                         required
-                        className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all"
+                        className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                       >
                         <option value="">Select a service</option>
                         <option value="spray-foam">Spray Foam Insulation</option>
@@ -235,7 +235,7 @@ export default function ContactPage() {
                       <label className="block text-sm font-bold text-white/80 mb-2">Message</label>
                       <textarea
                         rows={4}
-                        className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all resize-none"
+                        className="w-full px-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
                         placeholder="Tell us about your project..."
                       />
                     </div>
@@ -245,7 +245,7 @@ export default function ContactPage() {
                       disabled={formStatus === "submitting"}
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl text-white font-black text-lg shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 transition-all disabled:opacity-70"
+                      className="w-full flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-primary to-primary-dark rounded-xl text-white font-black text-lg shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all disabled:opacity-70"
                     >
                       {formStatus === "submitting" ? (
                         <>
@@ -268,7 +268,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section Placeholder */}
-      <section className="py-20 bg-zinc-950">
+      <section className="py-20 bg-purple">
         <div className="container mx-auto px-4">
           <div className="relative h-[400px] rounded-3xl overflow-hidden glass">
             <Image
@@ -279,7 +279,7 @@ export default function ContactPage() {
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
-                <MapPin className="w-12 h-12 text-orange-400 mx-auto mb-4" />
+                <MapPin className="w-12 h-12 text-primary-light mx-auto mb-4" />
                 <h3 className="text-2xl font-bold text-white mb-2">Serving West Texas</h3>
                 <p className="text-white/60">Seminole, Lubbock, Midland, Odessa & surrounding areas</p>
               </div>

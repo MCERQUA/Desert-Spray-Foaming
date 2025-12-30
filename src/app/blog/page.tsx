@@ -68,11 +68,11 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center overflow-hidden pt-32">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-black via-zinc-950 to-black" />
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-dark via-zinc-950 to-purple-dark" />
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
             transition={{ duration: 8, repeat: Infinity }}
-            className="absolute top-0 left-1/2 w-[600px] h-[600px] bg-orange-500/20 rounded-full blur-[150px]"
+            className="absolute top-0 left-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]"
           />
           <div className="absolute inset-0 grid-overlay opacity-30" />
         </div>
@@ -85,8 +85,8 @@ export default function BlogPage() {
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-orange mb-8"
             >
-              <BookOpen className="w-4 h-4 text-orange-400" />
-              <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+              <BookOpen className="w-4 h-4 text-primary-light" />
+              <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
                 Our Blog
               </span>
             </motion.div>
@@ -114,7 +114,7 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Grid */}
-      <section className="py-20 bg-gradient-to-b from-black to-zinc-950 relative">
+      <section className="py-20 bg-gradient-to-b from-purple-dark to-purple relative">
         <div className="absolute inset-0 grid-overlay opacity-20" />
 
         <div className="container mx-auto px-4 relative z-10">
@@ -129,7 +129,7 @@ export default function BlogPage() {
                 className="group"
               >
                 <Link href={`/blog/${post.slug}`}>
-                  <div className="glass rounded-3xl overflow-hidden border border-white/10 hover:border-orange-500/30 transition-all">
+                  <div className="glass rounded-3xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
                     {/* Image */}
                     <div className="relative h-52 overflow-hidden">
                       <Image
@@ -138,9 +138,9 @@ export default function BlogPage() {
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-purple-dark/60 to-transparent" />
                       <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 text-xs font-bold bg-orange-500 text-white rounded-full">
+                        <span className="px-3 py-1 text-xs font-bold bg-primary text-white rounded-full">
                           {post.category}
                         </span>
                       </div>
@@ -159,7 +159,7 @@ export default function BlogPage() {
                         </span>
                       </div>
 
-                      <h2 className="text-xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors line-clamp-2">
+                      <h2 className="text-xl font-bold text-white mb-3 group-hover:text-primary-light transition-colors line-clamp-2">
                         {post.title}
                       </h2>
 
@@ -167,7 +167,7 @@ export default function BlogPage() {
                         {post.excerpt}
                       </p>
 
-                      <div className="flex items-center gap-2 text-orange-400 font-bold text-sm group-hover:gap-4 transition-all">
+                      <div className="flex items-center gap-2 text-primary-light font-bold text-sm group-hover:gap-4 transition-all">
                         Read More
                         <ArrowRight className="w-4 h-4" />
                       </div>
@@ -181,11 +181,11 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-20 bg-zinc-950 relative">
+      <section className="py-20 bg-purple relative">
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
           transition={{ duration: 10, repeat: Infinity }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-[150px]"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px]"
         />
 
         <div className="container mx-auto px-4 relative z-10">
@@ -201,13 +201,13 @@ export default function BlogPage() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all"
+                className="flex-1 px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:border-primary focus:ring-1 focus:ring-primary transition-all"
               />
               <motion.button
                 type="submit"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl text-white font-bold shadow-lg shadow-orange-500/30"
+                className="px-8 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-xl text-white font-bold shadow-lg shadow-primary/30"
               >
                 Subscribe
               </motion.button>

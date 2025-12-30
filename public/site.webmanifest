@@ -4,8 +4,8 @@
   "description": "Premier spray foam insulation services in West Texas. Residential and commercial insulation contractor serving Seminole, Lubbock, Midland, Odessa and surrounding areas.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#f97316",
+  "background_color": "#391F56",
+  "theme_color": "#391F56",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

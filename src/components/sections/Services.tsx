@@ -24,7 +24,7 @@ const services = [
     ],
     image: "/images/closed-cell-foam-insulation-contractor-west-texas.jpg",
     href: "/services/spray-foam-insulation",
-    gradient: "from-orange-500/30 via-red-500/20 to-pink-500/20",
+    gradient: "from-primary/30 via-red-500/20 to-pink-500/20",
   },
   {
     icon: Home,
@@ -167,7 +167,7 @@ export default function Services() {
   };
 
   return (
-    <section ref={sectionRef} className="relative py-32 overflow-hidden bg-gradient-to-b from-black via-zinc-950 to-black">
+    <section ref={sectionRef} className="relative py-32 overflow-hidden bg-gradient-to-b from-purple-dark via-zinc-950 to-purple-dark">
       {/* Horizontal scrolling text in background */}
       <motion.div
         ref={marqueeRef}
@@ -184,7 +184,7 @@ export default function Services() {
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
           transition={{ duration: 10, repeat: Infinity }}
-          className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-[150px]"
+          className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px]"
         />
         <motion.div
           animate={{ scale: [1, 1.3, 1], opacity: [0.15, 0.3, 0.15] }}
@@ -204,8 +204,8 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-orange mb-8"
           >
-            <Sparkles className="w-4 h-4 text-orange-400" />
-            <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+            <Sparkles className="w-4 h-4 text-primary-light" />
+            <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
               Our Services
             </span>
           </motion.div>
@@ -227,7 +227,7 @@ export default function Services() {
             className="text-xl md:text-2xl text-white/60 max-w-3xl mx-auto"
           >
             Whether you're a commercial enterprise or homeowner,{" "}
-            <span className="text-orange-400 font-semibold">no project is too big or small</span>
+            <span className="text-primary-light font-semibold">no project is too big or small</span>
           </motion.p>
         </div>
 
@@ -251,7 +251,7 @@ export default function Services() {
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} mix-blend-multiply`} />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-purple-dark via-purple-dark/80 to-transparent" />
                 </div>
 
                 {/* Content */}
@@ -268,7 +268,7 @@ export default function Services() {
                   <h3 className="text-3xl md:text-4xl font-black text-white mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-orange-400 font-bold text-lg mb-4">
+                  <p className="text-primary-light font-bold text-lg mb-4">
                     {service.shortDesc}
                   </p>
                   <p className="text-white/70 leading-relaxed mb-6 flex-grow">
@@ -283,8 +283,8 @@ export default function Services() {
                         className="flex items-center gap-3 transition-all duration-300 group-hover:translate-x-2"
                         style={{ transitionDelay: `${idx * 50}ms` }}
                       >
-                        <div className="w-6 h-6 rounded-full bg-orange-500/20 flex items-center justify-center">
-                          <Check className="w-4 h-4 text-orange-400" />
+                        <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                          <Check className="w-4 h-4 text-primary-light" />
                         </div>
                         <span className="text-sm font-medium text-white/80">{feature}</span>
                       </div>
@@ -296,7 +296,7 @@ export default function Services() {
                     <motion.div
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl text-white font-bold shadow-lg shadow-orange-500/30 group-hover:shadow-orange-500/50 transition-all"
+                      className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-2xl text-white font-bold shadow-lg shadow-primary/30 group-hover:shadow-primary/50 transition-all"
                     >
                       Learn More
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />

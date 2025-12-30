@@ -33,10 +33,10 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-black overflow-hidden">
+    <footer className="relative bg-purple-dark overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-orange-500/5 rounded-full blur-[200px]" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[200px]" />
         <div className="absolute inset-0 grid-overlay opacity-10" />
       </div>
 
@@ -61,14 +61,14 @@ export default function Footer() {
 
             {/* Contact Info */}
             <div className="space-y-4">
-              <a href="tel:432-209-9154" className="flex items-center gap-3 text-white hover:text-orange-400 transition-colors group">
-                <div className="w-10 h-10 rounded-xl bg-orange-500/20 flex items-center justify-center group-hover:bg-orange-500/30 transition-colors">
-                  <Phone className="w-5 h-5 text-orange-400" />
+              <a href="tel:432-209-9154" className="flex items-center gap-3 text-white hover:text-primary-light transition-colors group">
+                <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                  <Phone className="w-5 h-5 text-primary-light" />
                 </div>
                 <span className="font-bold">432-209-9154</span>
               </a>
 
-              <a href="mailto:klass@desertsprayfoaming.com" className="flex items-center gap-3 text-white hover:text-orange-400 transition-colors group">
+              <a href="mailto:klass@desertsprayfoaming.com" className="flex items-center gap-3 text-white hover:text-primary-light transition-colors group">
                 <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
                   <Mail className="w-5 h-5 text-white/70" />
                 </div>
@@ -106,7 +106,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-white/60 hover:text-orange-400 transition-colors text-sm"
+                    className="text-white/60 hover:text-primary-light transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -123,7 +123,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-white/60 hover:text-orange-400 transition-colors text-sm"
+                    className="text-white/60 hover:text-primary-light transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -140,7 +140,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-white/60 hover:text-orange-400 transition-colors text-sm"
+                    className="text-white/60 hover:text-primary-light transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -160,9 +160,9 @@ export default function Footer() {
             onClick={scrollToTop}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="w-12 h-12 rounded-xl bg-orange-500/20 flex items-center justify-center hover:bg-orange-500/30 transition-colors group"
+            className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center hover:bg-primary/30 transition-colors group"
           >
-            <ArrowUp className="w-5 h-5 text-orange-400 group-hover:-translate-y-1 transition-transform" />
+            <ArrowUp className="w-5 h-5 text-primary-light group-hover:-translate-y-1 transition-transform" />
           </motion.button>
         </div>
       </div>

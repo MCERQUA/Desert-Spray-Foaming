@@ -42,11 +42,11 @@ export default function GainesCountyPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-dark via-purple-dark/90 to-purple-dark/60" />
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
             transition={{ duration: 8, repeat: Infinity }}
-            className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-orange-500/20 rounded-full blur-[150px]"
+            className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]"
           />
           <div className="absolute inset-0 grid-overlay opacity-30" />
         </div>
@@ -59,8 +59,8 @@ export default function GainesCountyPage() {
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-orange mb-8"
             >
-              <MapPin className="w-4 h-4 text-orange-400" />
-              <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+              <MapPin className="w-4 h-4 text-primary-light" />
+              <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
                 Service Area
               </span>
             </motion.div>
@@ -82,7 +82,7 @@ export default function GainesCountyPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl md:text-2xl text-white/80 leading-relaxed mb-8 max-w-2xl"
             >
-              Your trusted insulation contractor serving Seminole, Seagraves, and all of Gaines County. Experience <span className="text-orange-400 font-bold">comfort, savings, and quality</span> with Desert Spray Foaming.
+              Your trusted insulation contractor serving Seminole, Seagraves, and all of Gaines County. Experience <span className="text-primary-light font-bold">comfort, savings, and quality</span> with Desert Spray Foaming.
             </motion.p>
 
             <motion.div
@@ -95,7 +95,7 @@ export default function GainesCountyPage() {
                 href="tel:432-209-9154"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-white font-black text-lg shadow-2xl shadow-orange-500/40 group"
+                className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-primary to-primary-dark rounded-full text-white font-black text-lg shadow-2xl shadow-primary/40 group"
               >
                 <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
                 CALL FOR FREE QUOTE
@@ -116,7 +116,7 @@ export default function GainesCountyPage() {
       </section>
 
       {/* About Gaines County Section */}
-      <section className="py-32 bg-gradient-to-b from-black to-zinc-950 relative">
+      <section className="py-32 bg-gradient-to-b from-purple-dark to-purple relative">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -157,14 +157,14 @@ export default function GainesCountyPage() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-dark/60 to-transparent" />
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Areas Served */}
-      <section className="py-20 bg-zinc-950 relative">
+      <section className="py-20 bg-purple relative">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -194,7 +194,7 @@ export default function GainesCountyPage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-32 bg-zinc-950 relative">
+      <section className="py-32 bg-purple relative">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -220,10 +220,10 @@ export default function GainesCountyPage() {
                   <Link href={service.href}>
                     <motion.div
                       whileHover={{ y: -10 }}
-                      className="glass rounded-2xl p-6 border border-white/10 hover:border-orange-500/30 transition-all text-center h-full"
+                      className="glass rounded-2xl p-6 border border-white/10 hover:border-primary/30 transition-all text-center h-full"
                     >
-                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/30 flex items-center justify-center mb-4 mx-auto">
-                        <Icon className="w-7 h-7 text-orange-400" />
+                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary-dark/20 border border-primary/30 flex items-center justify-center mb-4 mx-auto">
+                        <Icon className="w-7 h-7 text-primary-light" />
                       </div>
                       <h3 className="text-lg font-bold text-white">{service.title}</h3>
                     </motion.div>
@@ -236,7 +236,7 @@ export default function GainesCountyPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-32 bg-gradient-to-b from-zinc-950 to-black relative">
+      <section className="py-32 bg-gradient-to-b from-purple to-purple-dark relative">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -251,7 +251,7 @@ export default function GainesCountyPage() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-dark/60 to-transparent" />
             </motion.div>
 
             <motion.div
@@ -274,8 +274,8 @@ export default function GainesCountyPage() {
                     transition={{ delay: idx * 0.1 }}
                     className="flex items-center gap-4"
                   >
-                    <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-5 h-5 text-orange-400" />
+                    <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                      <Check className="w-5 h-5 text-primary-light" />
                     </div>
                     <span className="text-white/80 text-lg">{benefit}</span>
                   </motion.div>
@@ -288,7 +288,7 @@ export default function GainesCountyPage() {
 
       {/* CTA Section */}
       <section className="py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-500" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark to-primary" />
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
           transition={{ duration: 8, repeat: Infinity }}
@@ -323,7 +323,7 @@ export default function GainesCountyPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="inline-flex items-center justify-center gap-3 px-10 py-6 bg-white rounded-full text-orange-600 font-black text-xl shadow-2xl group"
+            className="inline-flex items-center justify-center gap-3 px-10 py-6 bg-white rounded-full text-primary-dark font-black text-xl shadow-2xl group"
           >
             <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
             CALL 432-209-9154

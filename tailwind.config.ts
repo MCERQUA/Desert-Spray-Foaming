@@ -9,18 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // New purple/gold theme matching original website
         primary: {
-          DEFAULT: "#f97316", // Orange-500
-          dark: "#ea580c",    // Orange-600
-          light: "#fb923c",   // Orange-400
+          DEFAULT: "#CAA982", // Gold
+          dark: "#B8956E",    // Darker gold
+          light: "#D4BB9A",   // Lighter gold
         },
-        secondary: {
-          DEFAULT: "#0ea5e9", // Sky-500
-          dark: "#0284c7",    // Sky-600
-          light: "#38bdf8",   // Sky-400
+        purple: {
+          DEFAULT: "#46276A", // Medium purple
+          dark: "#391F56",    // Dark purple
+          light: "#5A3580",   // Lighter purple
         },
-        background: "#0a0a0a",
-        foreground: "#fafafa",
+        teal: {
+          DEFAULT: "#7EBEC5", // Teal accent
+          dark: "#5FA8B0",
+          light: "#9DD0D6",
+        },
+        cream: "#FAFAFA",
+        background: "#391F56", // Dark purple background
+        foreground: "#FAFAFA",
         muted: "#a1a1aa",
       },
       fontFamily: {

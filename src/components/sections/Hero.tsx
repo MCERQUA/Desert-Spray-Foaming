@@ -127,17 +127,17 @@ export default function Hero() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/80 to-orange-950/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-dark/90 via-purple-dark/80 to-orange-950/60" />
         </div>
 
         {/* Animated gradient orbs - parallax layer 1 */}
         <motion.div
-          className="parallax-layer-1 absolute top-1/4 -left-48 w-[500px] h-[500px] bg-gradient-to-r from-orange-500/30 to-red-500/20 rounded-full blur-[128px]"
+          className="parallax-layer-1 absolute top-1/4 -left-48 w-[500px] h-[500px] bg-gradient-to-r from-primary/30 to-red-500/20 rounded-full blur-[128px]"
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="parallax-layer-2 absolute bottom-1/4 -right-48 w-[500px] h-[500px] bg-gradient-to-r from-orange-600/20 to-yellow-500/20 rounded-full blur-[128px]"
+          className="parallax-layer-2 absolute bottom-1/4 -right-48 w-[500px] h-[500px] bg-gradient-to-r from-primary-dark/20 to-yellow-500/20 rounded-full blur-[128px]"
           animate={{ scale: [1, 1.3, 1], opacity: [0.2, 0.4, 0.2] }}
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         />
@@ -174,10 +174,10 @@ export default function Hero() {
                 className="inline-flex items-center gap-3 px-6 py-3 rounded-full glass-orange mb-8"
               >
                 <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-light opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
                 </span>
-                <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+                <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
                   Serving West Texas Since 2023
                 </span>
               </motion.div>
@@ -200,7 +200,7 @@ export default function Hero() {
                 className="text-xl md:text-2xl text-white/80 leading-relaxed mb-10"
               >
                 Your premier choice for{" "}
-                <span className="text-orange-400 font-bold">superior spray foam insulation</span>{" "}
+                <span className="text-primary-light font-bold">superior spray foam insulation</span>{" "}
                 in Seminole, TX and surrounding areas — delivering comfort and quality every time.
               </motion.p>
 
@@ -215,7 +215,7 @@ export default function Hero() {
                   href="tel:432-209-9154"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-white font-black text-lg shadow-2xl shadow-orange-500/40 hover:shadow-orange-500/60 transition-all group"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-primary to-primary-dark rounded-full text-white font-black text-lg shadow-2xl shadow-primary/40 hover:shadow-primary/60 transition-all group"
                 >
                   <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
                   CALL 432-209-9154
@@ -240,11 +240,11 @@ export default function Hero() {
                 className="mt-12 flex items-center gap-6 text-white/60 text-sm"
               >
                 <div className="flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-orange-400" />
+                  <Shield className="w-5 h-5 text-primary-light" />
                   <span>Certified Technicians</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Zap className="w-5 h-5 text-orange-400" />
+                  <Zap className="w-5 h-5 text-primary-light" />
                   <span>Premium Materials</span>
                 </div>
               </motion.div>
@@ -274,8 +274,8 @@ export default function Hero() {
                         className="glass-orange rounded-3xl p-6 glow-orange"
                       >
                         <div className="flex items-center gap-4 mb-4">
-                          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500/30 to-orange-600/30 flex items-center justify-center">
-                            <Icon className="w-7 h-7 text-orange-400" />
+                          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/30 to-primary-dark/30 flex items-center justify-center">
+                            <Icon className="w-7 h-7 text-primary-light" />
                           </div>
                         </div>
                         <div className="text-4xl font-black text-white mb-1">
@@ -325,7 +325,7 @@ export default function Hero() {
           <motion.div
             animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-3 bg-orange-400 rounded-full mt-2"
+            className="w-1.5 h-3 bg-primary-light rounded-full mt-2"
           />
         </motion.div>
       </motion.div>

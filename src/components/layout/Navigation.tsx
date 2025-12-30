@@ -79,7 +79,7 @@ export default function Navigation() {
                 >
                   <Link
                     href={link.href}
-                    className="flex items-center gap-1 text-sm font-semibold text-white/90 hover:text-orange-400 transition-colors"
+                    className="flex items-center gap-1 text-sm font-semibold text-white/90 hover:text-primary-light transition-colors"
                   >
                     {link.name}
                     {link.children && <ChevronDown className="w-4 h-4" />}
@@ -99,7 +99,7 @@ export default function Navigation() {
                           <Link
                             key={child.name}
                             href={child.href}
-                            className="block px-4 py-3 text-sm text-white/80 hover:text-orange-400 hover:bg-white/5 rounded-xl transition-all"
+                            className="block px-4 py-3 text-sm text-white/80 hover:text-primary-light hover:bg-white/5 rounded-xl transition-all"
                           >
                             {child.name}
                           </Link>
@@ -117,7 +117,7 @@ export default function Navigation() {
                 href="tel:432-209-9154"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-white font-bold text-sm shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 transition-shadow"
+                className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-primary-dark rounded-full text-white font-bold text-sm shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-shadow"
               >
                 <Phone className="w-4 h-4" />
                 <span>432-209-9154</span>
@@ -144,7 +144,7 @@ export default function Navigation() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-40 lg:hidden"
           >
-            <div className="absolute inset-0 bg-black/90 backdrop-blur-xl" onClick={() => setIsMobileMenuOpen(false)} />
+            <div className="absolute inset-0 bg-purple-dark/90 backdrop-blur-xl" onClick={() => setIsMobileMenuOpen(false)} />
             <motion.nav
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
@@ -163,7 +163,7 @@ export default function Navigation() {
                     <Link
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="block text-xl font-bold text-white hover:text-orange-400 transition-colors py-2"
+                      className="block text-xl font-bold text-white hover:text-primary-light transition-colors py-2"
                     >
                       {link.name}
                     </Link>
@@ -174,7 +174,7 @@ export default function Navigation() {
                             key={child.name}
                             href={child.href}
                             onClick={() => setIsMobileMenuOpen(false)}
-                            className="block text-sm text-white/70 hover:text-orange-400 transition-colors py-1"
+                            className="block text-sm text-white/70 hover:text-primary-light transition-colors py-1"
                           >
                             {child.name}
                           </Link>
@@ -190,7 +190,7 @@ export default function Navigation() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="flex items-center justify-center gap-2 mt-8 px-6 py-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-white font-bold shadow-lg"
+                className="flex items-center justify-center gap-2 mt-8 px-6 py-4 bg-gradient-to-r from-primary to-primary-dark rounded-full text-white font-bold shadow-lg"
               >
                 <Phone className="w-5 h-5" />
                 <span>Call Now</span>

@@ -133,11 +133,11 @@ export default function CTA() {
           fill
           className="object-cover scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-dark via-purple-dark/90 to-purple-dark/70" />
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
           transition={{ duration: 8, repeat: Infinity }}
-          className="absolute top-0 left-0 w-[600px] h-[600px] bg-orange-500/20 rounded-full blur-[150px]"
+          className="absolute top-0 left-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]"
         />
       </motion.div>
 
@@ -166,10 +166,10 @@ export default function CTA() {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-orange mb-8"
             >
               <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-light opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
               </span>
-              <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+              <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
                 Get Started Today
               </span>
             </motion.div>
@@ -192,7 +192,7 @@ export default function CTA() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-xl text-white/70 leading-relaxed mb-10"
             >
-              Experience comfort, satisfaction, and affordability. From crafting comfortable indoor havens to ensuring your complete satisfaction, we're dedicated to providing exceptional service at <span className="text-orange-400 font-bold">prices that won't break the bank</span>.
+              Experience comfort, satisfaction, and affordability. From crafting comfortable indoor havens to ensuring your complete satisfaction, we're dedicated to providing exceptional service at <span className="text-primary-light font-bold">prices that won't break the bank</span>.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -201,7 +201,7 @@ export default function CTA() {
                 href="tel:432-209-9154"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="cta-button inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-white font-black text-lg shadow-2xl shadow-orange-500/40 hover:shadow-orange-500/60 transition-all group"
+                className="cta-button inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-primary to-primary-dark rounded-full text-white font-black text-lg shadow-2xl shadow-primary/40 hover:shadow-primary/60 transition-all group"
               >
                 <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
                 CALL NOW
@@ -211,7 +211,7 @@ export default function CTA() {
                 href="/contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="cta-button inline-flex items-center justify-center gap-3 px-8 py-5 glass rounded-full text-white font-bold text-lg border border-white/20 hover:border-orange-500/50 transition-all group"
+                className="cta-button inline-flex items-center justify-center gap-3 px-8 py-5 glass rounded-full text-white font-bold text-lg border border-white/20 hover:border-primary/50 transition-all group"
               >
                 FREE QUOTE
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
@@ -226,14 +226,14 @@ export default function CTA() {
               whileHover={{ scale: 1.02, x: 10 }}
               className="contact-card glass-orange rounded-3xl p-6 flex items-center gap-6"
             >
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/50">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center shadow-lg shadow-primary/50">
                 <Phone className="w-8 h-8 text-white" />
               </div>
               <div>
-                <div className="text-sm font-bold text-orange-400 uppercase tracking-wider mb-1">
+                <div className="text-sm font-bold text-primary-light uppercase tracking-wider mb-1">
                   Call Us
                 </div>
-                <a href="tel:432-209-9154" className="text-2xl font-black text-white hover:text-orange-400 transition-colors">
+                <a href="tel:432-209-9154" className="text-2xl font-black text-white hover:text-primary-light transition-colors">
                   432-209-9154
                 </a>
               </div>
@@ -251,7 +251,7 @@ export default function CTA() {
                 <div className="text-sm font-bold text-white/60 uppercase tracking-wider mb-1">
                   Email Us
                 </div>
-                <a href="mailto:klass@desertsprayfoaming.com" className="text-lg font-bold text-white hover:text-orange-400 transition-colors">
+                <a href="mailto:klass@desertsprayfoaming.com" className="text-lg font-bold text-white hover:text-primary-light transition-colors">
                   klass@desertsprayfoaming.com
                 </a>
               </div>

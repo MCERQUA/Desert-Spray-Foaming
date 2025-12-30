@@ -60,7 +60,7 @@ export default function AtticInsulationPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-dark via-purple-dark/90 to-purple-dark/60" />
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
             transition={{ duration: 8, repeat: Infinity }}
@@ -77,8 +77,8 @@ export default function AtticInsulationPage() {
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-orange mb-8"
             >
-              <Home className="w-4 h-4 text-orange-400" />
-              <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+              <Home className="w-4 h-4 text-primary-light" />
+              <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
                 Protect Your Comfort
               </span>
             </motion.div>
@@ -100,7 +100,7 @@ export default function AtticInsulationPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl md:text-2xl text-white/80 leading-relaxed mb-8 max-w-2xl"
             >
-              Don't let heat or cold escape! Our team of skilled professionals will assess your attic space and recommend the <span className="text-orange-400 font-bold">best insulation solution</span> for your needs.
+              Don't let heat or cold escape! Our team of skilled professionals will assess your attic space and recommend the <span className="text-primary-light font-bold">best insulation solution</span> for your needs.
             </motion.p>
 
             <motion.div
@@ -113,7 +113,7 @@ export default function AtticInsulationPage() {
                 href="tel:432-209-9154"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-white font-black text-lg shadow-2xl shadow-orange-500/40 group"
+                className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-primary to-primary-dark rounded-full text-white font-black text-lg shadow-2xl shadow-primary/40 group"
               >
                 <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
                 GET FREE QUOTE
@@ -143,7 +143,7 @@ export default function AtticInsulationPage() {
                 { value: "20+", label: "Years Protection" },
               ].map((stat, idx) => (
                 <div key={idx} className="text-center">
-                  <div className="text-3xl md:text-4xl font-black text-orange-400">{stat.value}</div>
+                  <div className="text-3xl md:text-4xl font-black text-primary-light">{stat.value}</div>
                   <div className="text-sm text-white/60">{stat.label}</div>
                 </div>
               ))}
@@ -153,7 +153,7 @@ export default function AtticInsulationPage() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-32 bg-gradient-to-b from-black to-zinc-950 relative">
+      <section className="py-32 bg-gradient-to-b from-purple-dark to-purple relative">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -167,7 +167,7 @@ export default function AtticInsulationPage() {
               </h2>
 
               <p className="text-lg text-white/70 leading-relaxed mb-6">
-                Is your attic space currently underutilized or not properly insulated? You may be unknowingly <span className="text-orange-400 font-bold">increasing your energy bills</span> and decreasing the comfort levels in your home.
+                Is your attic space currently underutilized or not properly insulated? You may be unknowingly <span className="text-primary-light font-bold">increasing your energy bills</span> and decreasing the comfort levels in your home.
               </p>
 
               <p className="text-lg text-white/70 leading-relaxed mb-8">
@@ -211,19 +211,19 @@ export default function AtticInsulationPage() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-dark/60 to-transparent" />
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section ref={benefitsRef} className="py-32 bg-zinc-950 relative">
+      <section ref={benefitsRef} className="py-32 bg-purple relative">
         <div className="absolute inset-0 grid-overlay opacity-20" />
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
           transition={{ duration: 10, repeat: Infinity }}
-          className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-[150px]"
+          className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[150px]"
         />
 
         <div className="container mx-auto px-4 relative z-10">
@@ -248,10 +248,10 @@ export default function AtticInsulationPage() {
                   animate={benefitsInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: idx * 0.15 }}
                   whileHover={{ y: -10 }}
-                  className="glass rounded-3xl p-8 border border-white/10 hover:border-orange-500/30 transition-all"
+                  className="glass rounded-3xl p-8 border border-white/10 hover:border-primary/30 transition-all"
                 >
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/30 flex items-center justify-center mb-6">
-                    <Icon className="w-8 h-8 text-orange-400" />
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-primary-dark/20 border border-primary/30 flex items-center justify-center mb-6">
+                    <Icon className="w-8 h-8 text-primary-light" />
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">{benefit.title}</h3>
                   <p className="text-white/60 leading-relaxed">{benefit.description}</p>
@@ -263,7 +263,7 @@ export default function AtticInsulationPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-32 bg-gradient-to-b from-zinc-950 to-black relative">
+      <section className="py-32 bg-gradient-to-b from-purple to-purple-dark relative">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -278,7 +278,7 @@ export default function AtticInsulationPage() {
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-dark/60 to-transparent" />
             </motion.div>
 
             <div>
@@ -318,7 +318,7 @@ export default function AtticInsulationPage() {
                     transition={{ delay: idx * 0.15 }}
                     className="flex gap-6"
                   >
-                    <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center font-black text-white text-lg shadow-lg shadow-orange-500/30">
+                    <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center font-black text-white text-lg shadow-lg shadow-primary/30">
                       {item.step}
                     </div>
                     <div>
@@ -334,7 +334,7 @@ export default function AtticInsulationPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-32 bg-black relative">
+      <section className="py-32 bg-purple-dark relative">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -366,7 +366,7 @@ export default function AtticInsulationPage() {
 
       {/* CTA Section */}
       <section className="py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-500" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark to-primary" />
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
           transition={{ duration: 8, repeat: Infinity }}
@@ -401,7 +401,7 @@ export default function AtticInsulationPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="inline-flex items-center justify-center gap-3 px-10 py-6 bg-white rounded-full text-orange-600 font-black text-xl shadow-2xl group"
+            className="inline-flex items-center justify-center gap-3 px-10 py-6 bg-white rounded-full text-primary-dark font-black text-xl shadow-2xl group"
           >
             <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
             CALL 432-209-9154

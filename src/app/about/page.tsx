@@ -43,11 +43,11 @@ export default function AboutPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-dark via-purple-dark/90 to-purple-dark/60" />
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
             transition={{ duration: 8, repeat: Infinity }}
-            className="absolute top-0 left-0 w-[600px] h-[600px] bg-orange-500/20 rounded-full blur-[150px]"
+            className="absolute top-0 left-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]"
           />
           <div className="absolute inset-0 grid-overlay opacity-30" />
         </div>
@@ -60,8 +60,8 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-orange mb-8"
             >
-              <Users className="w-4 h-4 text-orange-400" />
-              <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+              <Users className="w-4 h-4 text-primary-light" />
+              <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
                 About Us
               </span>
             </motion.div>
@@ -90,7 +90,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Bar */}
-      <section className="py-12 bg-gradient-to-r from-orange-600 to-orange-500 relative">
+      <section className="py-12 bg-gradient-to-r from-primary-dark to-primary relative">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, idx) => (
@@ -111,7 +111,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <section className="py-32 bg-gradient-to-b from-black to-zinc-950 relative">
+      <section className="py-32 bg-gradient-to-b from-purple-dark to-purple relative">
         <div className="absolute inset-0 grid-overlay opacity-20" />
 
         <div className="container mx-auto px-4 relative z-10">
@@ -129,7 +129,7 @@ export default function AboutPage() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-dark/60 to-transparent" />
               </div>
 
               <motion.div
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 transition={{ delay: 0.3 }}
                 className="absolute -bottom-8 -right-8 glass-orange rounded-3xl p-6 text-center"
               >
-                <div className="text-5xl font-black text-orange-400">6+</div>
+                <div className="text-5xl font-black text-primary-light">6+</div>
                 <div className="text-sm font-bold text-white/80">Years Experience</div>
               </motion.div>
             </motion.div>
@@ -156,13 +156,13 @@ export default function AboutPage() {
 
               <div className="space-y-6 text-white/70 leading-relaxed">
                 <p>
-                  With over <span className="text-orange-400 font-bold">6 years of experience</span> in the insulation industry and a passion for his work, Klass started Desert Spray Foaming in 2023.
+                  With over <span className="text-primary-light font-bold">6 years of experience</span> in the insulation industry and a passion for his work, Klass started Desert Spray Foaming in 2023.
                 </p>
                 <p>
                   Our mission is to provide value, a comfortable indoor environment, customer satisfaction, affordable pricing, and a quality product. Whether commercial or residential, big or small, we've got you covered.
                 </p>
                 <p>
-                  At Desert Spray Foaming, we're not just about insulation — we're about <span className="text-orange-400 font-bold">creating lasting relationships</span> and spaces you'll love.
+                  At Desert Spray Foaming, we're not just about insulation — we're about <span className="text-primary-light font-bold">creating lasting relationships</span> and spaces you'll love.
                 </p>
                 <p>
                   We offer a comprehensive range of services, including open-cell and closed-cell spray foam options, attic insulation, and insulation removal. We're here to make your spaces cozier, your experiences more satisfying, and your wallets happier.
@@ -174,11 +174,11 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-32 bg-zinc-950 relative">
+      <section className="py-32 bg-purple relative">
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
           transition={{ duration: 10, repeat: Infinity }}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-orange-500/10 rounded-full blur-[200px]"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[200px]"
         />
 
         <div className="container mx-auto px-4 relative z-10">
@@ -203,10 +203,10 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.15 }}
                   whileHover={{ y: -10 }}
-                  className="glass rounded-3xl p-8 border border-white/10 hover:border-orange-500/30 transition-all text-center"
+                  className="glass rounded-3xl p-8 border border-white/10 hover:border-primary/30 transition-all text-center"
                 >
-                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/30 flex items-center justify-center mb-6 mx-auto">
-                    <Icon className="w-10 h-10 text-orange-400" />
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary-dark/20 border border-primary/30 flex items-center justify-center mb-6 mx-auto">
+                    <Icon className="w-10 h-10 text-primary-light" />
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">{value.title}</h3>
                   <p className="text-white/60 leading-relaxed">{value.description}</p>
@@ -226,7 +226,7 @@ export default function AboutPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/80" />
+          <div className="absolute inset-0 bg-purple-dark/80" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10 text-center">
@@ -260,7 +260,7 @@ export default function AboutPage() {
               href="tel:432-209-9154"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full text-white font-black text-lg shadow-2xl shadow-orange-500/40 group"
+              className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-gradient-to-r from-primary to-primary-dark rounded-full text-white font-black text-lg shadow-2xl shadow-primary/40 group"
             >
               <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
               CALL NOW

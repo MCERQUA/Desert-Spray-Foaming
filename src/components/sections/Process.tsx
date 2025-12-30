@@ -147,7 +147,7 @@ export default function Process() {
   return (
     <section ref={sectionRef} className="relative py-32 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black to-zinc-950" />
+      <div className="absolute inset-0 bg-gradient-to-b from-purple-dark to-purple" />
 
       {/* Horizontal scrolling text in background */}
       <motion.div
@@ -162,7 +162,7 @@ export default function Process() {
       <motion.div
         animate={{ scale: [1, 1.3, 1], opacity: [0.1, 0.2, 0.1] }}
         transition={{ duration: 15, repeat: Infinity }}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-orange-500/10 rounded-full blur-[200px]"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-primary/10 rounded-full blur-[200px]"
       />
       <div className="absolute inset-0 grid-overlay opacity-20" />
 
@@ -176,7 +176,7 @@ export default function Process() {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-orange mb-8"
           >
-            <span className="text-sm font-bold text-orange-400 uppercase tracking-wider">
+            <span className="text-sm font-bold text-primary-light uppercase tracking-wider">
               How It Works
             </span>
           </motion.div>
@@ -215,7 +215,7 @@ export default function Process() {
                   {/* Step Number Badge */}
                   <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
                     <div
-                      className="process-badge w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center font-black text-white shadow-lg shadow-orange-500/50"
+                      className="process-badge w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center font-black text-white shadow-lg shadow-primary/50"
                     >
                       {step.number}
                     </div>
@@ -224,14 +224,14 @@ export default function Process() {
                   {/* Card */}
                   <motion.div
                     whileHover={{ y: -10, scale: 1.02 }}
-                    className="pt-12 pb-8 px-8 glass rounded-3xl border border-white/10 group-hover:border-orange-500/30 transition-all h-full"
+                    className="pt-12 pb-8 px-8 glass rounded-3xl border border-white/10 group-hover:border-primary/30 transition-all h-full"
                   >
                     {/* Icon */}
                     <motion.div
                       whileHover={{ scale: 1.1, rotate: 6 }}
-                      className="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500/20 to-orange-600/20 border border-orange-500/30 flex items-center justify-center mb-6 mx-auto transition-transform"
+                      className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-primary-dark/20 border border-primary/30 flex items-center justify-center mb-6 mx-auto transition-transform"
                     >
-                      <Icon className="w-8 h-8 text-orange-400" />
+                      <Icon className="w-8 h-8 text-primary-light" />
                     </motion.div>
 
                     <h3 className="text-2xl font-black text-white text-center mb-4">
@@ -252,7 +252,7 @@ export default function Process() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.8 + idx * 0.2, duration: 0.5 }}
                       >
-                        <ArrowRight className="w-8 h-8 text-orange-400" />
+                        <ArrowRight className="w-8 h-8 text-primary-light" />
                       </motion.div>
                     </div>
                   )}
