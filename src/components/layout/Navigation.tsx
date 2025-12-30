@@ -58,11 +58,11 @@ export default function Navigation() {
                 className="flex items-center gap-3"
               >
                 <Image
-                  src="/images/desert-spray-foam-logo.webp"
-                  alt="Desert Spray Foaming"
-                  width={180}
-                  height={60}
-                  className="h-12 w-auto"
+                  src="/images/desert-spray-foaming-logo-gold.png"
+                  alt="Desert Spray Foaming - Quality You Can Feel"
+                  width={200}
+                  height={80}
+                  className="h-14 w-auto"
                   priority
                 />
               </motion.div>

@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 const inputLogo = './public/images/cropped-desert-spray-foam-logo-192x192.webp';
+const goldLogo = './public/images/desert-spray-foaming-logo-gold.png';
 const outputDir = './public';
 
 async function generateFavicons() {
@@ -47,30 +48,37 @@ async function generateFavicons() {
   console.log('Created: android-chrome-512x512.png');
 
   // Generate favicon.ico (multi-size ICO alternative - just use 32x32 png renamed)
-  // For true ICO, we'll use the PNG and let browsers handle it
   await sharp(sourceBuffer)
     .resize(32, 32)
     .png()
     .toFile(path.join(outputDir, 'favicon.png'));
   console.log('Created: favicon.png');
 
-  // Generate OG image (1200x630) with logo centered on brand background
+  // Generate OG image (1200x630) with gold logo centered on dark background
   const ogWidth = 1200;
   const ogHeight = 630;
-  const logoSize = 300;
 
-  // Create a gradient background and composite the logo
+  // Read the gold logo
+  const goldLogoBuffer = fs.readFileSync(goldLogo);
+  const goldLogoResized = await sharp(goldLogoBuffer)
+    .resize(600, null, { fit: 'inside' })
+    .png()
+    .toBuffer();
+
+  // Get dimensions of resized logo
+  const logoMetadata = await sharp(goldLogoResized).metadata();
+
   await sharp({
     create: {
       width: ogWidth,
       height: ogHeight,
       channels: 4,
-      background: { r: 23, g: 23, b: 23, alpha: 1 }
+      background: { r: 0, g: 0, b: 0, alpha: 1 }
     }
   })
     .composite([
       {
-        input: await sharp(sourceBuffer).resize(logoSize, logoSize).png().toBuffer(),
+        input: goldLogoResized,
         gravity: 'center'
       }
     ])
@@ -84,12 +92,12 @@ async function generateFavicons() {
       width: ogWidth,
       height: ogHeight,
       channels: 4,
-      background: { r: 23, g: 23, b: 23, alpha: 1 }
+      background: { r: 0, g: 0, b: 0, alpha: 1 }
     }
   })
     .composite([
       {
-        input: await sharp(sourceBuffer).resize(logoSize, logoSize).png().toBuffer(),
+        input: goldLogoResized,
         gravity: 'center'
       }
     ])
