@@ -53,6 +53,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Service area pages
     {
+      url: `${baseUrl}/service-areas`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/service-areas/lubbock-tx`,
       lastModified: currentDate,
       changeFrequency: "monthly",
