@@ -1,0 +1,21 @@
+{
+  "name": "Desert Spray Foaming",
+  "short_name": "Desert Spray",
+  "description": "Premier spray foam insulation services in West Texas. Residential and commercial insulation contractor serving Seminole, Lubbock, Midland, Odessa and surrounding areas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
