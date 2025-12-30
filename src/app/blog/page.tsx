@@ -68,7 +68,7 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center overflow-hidden pt-32">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-dark via-zinc-950 to-purple-dark" />
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-dark via-purple to-purple-dark" />
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
             transition={{ duration: 8, repeat: Infinity }}

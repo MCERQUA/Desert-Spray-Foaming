@@ -167,7 +167,7 @@ export default function Services() {
   };
 
   return (
-    <section ref={sectionRef} className="relative py-32 overflow-hidden bg-gradient-to-b from-purple-dark via-zinc-950 to-purple-dark">
+    <section ref={sectionRef} className="relative py-32 overflow-hidden bg-gradient-to-b from-purple-dark via-purple to-purple-dark">
       {/* Horizontal scrolling text in background */}
       <motion.div
         ref={marqueeRef}

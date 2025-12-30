@@ -175,7 +175,7 @@ export default function About() {
     <section ref={sectionRef} className="relative py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-dark via-zinc-950 to-purple-dark" />
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-dark via-purple to-purple-dark" />
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
           transition={{ duration: 12, repeat: Infinity }}
