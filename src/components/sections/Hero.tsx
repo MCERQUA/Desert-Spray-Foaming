@@ -127,7 +127,7 @@ export default function Hero() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-dark/90 via-purple-dark/80 to-orange-950/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-dark/95 via-purple-dark/85 to-purple/70" />
         </div>
 
         {/* Animated gradient orbs - parallax layer 1 */}
