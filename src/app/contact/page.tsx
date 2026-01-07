@@ -215,8 +215,9 @@ export default function ContactPage() {
                   <form
                     name="contact"
                     method="POST"
+                    action="/"
                     data-netlify="true"
-                    netlify-honeypot="bot-field"
+                    data-netlify-honeypot="bot-field"
                     onSubmit={handleSubmit}
                     className="space-y-6"
                   >

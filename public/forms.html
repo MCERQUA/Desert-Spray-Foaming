@@ -11,7 +11,7 @@
     This file is statically served to allow Netlify's build bots to detect the form.
     Last Updated: 2026-01-07
   -->
-  <form name="contact" netlify="true" netlify-honeypot="bot-field" hidden>
+  <form name="contact" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
     <input type="hidden" name="form-name" value="contact" />
     <input name="bot-field" />
     <input type="text" name="firstName" />
