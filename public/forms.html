@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form</title>
+  <title>Forms</title>
 </head>
 <body>
-  <!-- This hidden form is required for Netlify to detect forms in React/Next.js apps -->
-  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <!-- 
+    Netlify Form Definition 
+    This file is statically served to allow Netlify's build bots to detect the form.
+  -->
+  <form name="contact" netlify="true" netlify-honeypot="bot-field" hidden>
     <input type="hidden" name="form-name" value="contact" />
     <input name="bot-field" />
     <input type="text" name="firstName" />
